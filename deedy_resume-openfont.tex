@@ -1,0 +1,271 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Abdul Noushad}{Sheikh}{ \href{https://abdul.co.in}{abdul.co.in} | \href{mailto:me@abdul.co.in}{me@abdul.co.in}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Pune}
+\descript{B-Eng in Computer Science}
+% College of Engineering \\
+\location{July 2019 | Pune, IN}
+\location{Cum. GPA: 8.15 / 10 }
+\sectionsep
+
+\subsection{Somalwar Jr. College}
+\descript{Higher Secondary School}
+\location{Feb 2015 | Nagpur, IN}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+
+Github:// \linktext{\href{https://github.com/abdulnine7}{abdulnine7}}
+LinkedIn://  \linktext{\href{https://www.linkedin.com/in/abdulnine7}{abdulnine7}}
+Twitter://  \linktext{\href{https://twitter.com/abdulnine7}{@abdulnine7}}
+Instagram://  \linktext{\href{https://www.instagram.com/abdul_codes}{@abdul\_codes}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+% \subsection{Graduate}
+% Advanced Machine Learning \\
+% Open Source Software Engineering \\
+% Advanced Interactive Graphics \\
+% Compilers + Practicum \\
+% Cloud Computing \\
+% Evolutionary Computation \\
+% Defending Computer Networks \\
+% Machine Learning \\
+% \sectionsep
+
+\subsection{Undergraduate}
+Object Oriented Programming \\
+Operating Systems \\
+Data Structures + Practicum \\
+Database Systems + Practicum \\
+Functional Programming \\
+Computer Graphics + Practicum \\
+Unix Tools and Scripting \\
+Embedded Systems and IOT \\
+\vspace{3pt} % Hacky fix for awkward extra vertical space
+\descript{Electives:}
+Cloud Computing\\
+Data Mining\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Java \textbullet{} Python \textbullet{} Javascript \\
+\textbullet{} HTML | CSS \textbullet{} Android  \\ 
+\location{Over 1000 lines:}
+C \textbullet{} C++ \textbullet{} PHP \textbullet{} Shell \\
+\location{Familiar:}
+Android-Dev \textbullet{} MySQL \textbullet{} \LaTeX \\
+Git \textbullet{} AWS \textbullet{} NGiNX \textbullet{} NodeJS
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CONTACT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Contact}
+\location{Phone:}
+\linktext{\href{tel:+919766294462}{+91-97662-94462}}
+\location{Email:}
+me@abdul.co.in\\
+bitwiseabdul@gmail.com\\
+\location{Address:}
+102 Aman Vista · Borgao Road · Jafar Nagar, Nagpur · India - 440013
+
+\vspace{5pt}
+\hiddenwords{google microsoft azure amazon web services hacker rank coding devops ajax developer asp.net business analyst c\# c++ css database designer dot net engineer html javascript jquery mobile apps/applications mobile ux mysql .net oracle php programmer software sql xml problem solving communication sales and team management ux designer business development manager full stack developer responsive ui node express flutter reactjs nodemon mongodb mongo frontend backend seo pentesting ethical hacking labs automation data analytics ai iit nit bombay delhi harvard stanford designer computer science optimization software developement sdlc distributed systems jira web applications postgresql github gitlab version control distributed computing innovative passion vision collaborative high quality leadership}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Deloitte USI}
+\descript{| Systems Engineer - DC Analyst }
+\location{Jan 2020 - Present | Mumbai, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Perform system, unit, acceptance, regression, load and functional/performance testing on project "ONE" of Federal Government, State of Oregon, USA.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{UNI Share.in}
+\descript{| Founder Member }
+\location{Feb 2018 - May 2019 | Pune, IN}
+\begin{tightemize}
+\item Co-Founded \linktext{\href{https://unishare.ml/}{UNI Share.in}} with one of my friend in college final year. and Led a team of passionate students to drive execution and support our website.
+\item Our moto was to help students share and sell their old books and academics related things to each other.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Engineering Project Guru}
+\descript{| Developer and Product Builder }
+\location{Sept 2017 – July 2019 | Pune, IN}
+\begin{tightemize}
+\item Started a website named \linktext{\href{http://www.project-guru.ml/}{Project-Guru.ml}} to help non tech-savvy students in coding and electronics projects.
+\item Worked in various projects related to Android, Machine Learning, Robotics, Big Data and AI etc.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Accurate Gems Pvt Ltd}
+\descript{| Mobile App Developer Intern }
+\location{Sept 2019 – Oct 2019 | New Delhi, IN | Remote Internship}
+\begin{tightemize}
+\item Developed an food ordering Android App for a client based in New Delhi.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Persistent Back-Door in Android OS}
+\descript{}
+\location{May 2016 – Feb 2017 | Pune, IN}
+\begin{tightemize}
+\item Worked on Remote Access Trojan (RATs) for indirect security loophole in Android OS version KitKat and earlier, expressing the importance of cross checking app permissions while Installing.
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Awards} 
+\linktext{
+\begin{tabular}{lrl}
+2018 & National & Finished in Top 5 at \href{https://www.sih.gov.in/}{Smart India Hackathon 2018}
+\end{tabular}
+}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects} 
+\descript{\textbullet{} JobsExplorer.in}
+Designed a Web App to help job search from different popular available job portals in India with ease and clarity to the job applicant. \linktext{\href{https://jobsexplorer.in/}{ JobsExplorer.in}}
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\descript{\textbullet{} SSH Parallel Login}
+Developed a shell project to parallel login into lab network and install packages in all machines from a single host machine.
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\descript{\textbullet{} Customer Churn Detection}
+Created a data analysis model based on Neural Networks, Logistic Regression and Naive Bayes to perform churn analysis on telecom customers data.
+
+\vspace{2pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     INTERESTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interests} 
+\location{Programming \textbullet{} Security Pentesting \textbullet{} Robotics and Automation \textbullet{} Gaming }
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
