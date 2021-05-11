@@ -45,10 +45,10 @@
 \usepackage[UKenglish]{isodate}
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
-\newcommand{\lastupdated}{\begin{textblock}{60}(150,267)
+\newcommand{\lastupdated}{
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
-Last Updated on \today
-\end{textblock}}
+Last Updated on: \today
+}
 
 % Name command
 \newcommand{\namesection}[3]{
@@ -90,7 +90,11 @@ Last Updated on \today
 
 % Normal Text command
 \newcommand{\linktext}[1]{
-\raggedright\scshape\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont {#1 \\} \normalfont
+\raggedright\scshape\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont {#1} \normalfont
+}
+
+\newcommand{\certificatetext}[1]{
+\raggedright\scshape\fontspec[Path = fonts/lato/]{Lato-LigIta}\selectfont {#1} \normalfont
 }
 
 % Bullet Lists with fewer gaps command
